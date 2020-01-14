@@ -1,0 +1,16 @@
+name       : libuninameslist
+version    : 20190701
+release    : 1
+source     :
+    - https://github.com/fontforge/libuninameslist/archive/20190701.tar.gz : 426bc2f9f0068796ef31c1d5ce088d8da87b3e2a91675969d5b04968d71cdf4f
+license    : BSD-3-Clause
+component  : programming.library
+summary    : A library providing Unicode character names and annotations
+description: |
+    A library providing Unicode character names and annotations
+setup      : |
+    %reconfigure
+build      : |
+    %make
+install    : |
+    %make_install

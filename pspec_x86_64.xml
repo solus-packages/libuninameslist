@@ -1,0 +1,52 @@
+<PISI>
+    <Source>
+        <Name>libuninameslist</Name>
+        <Packager>
+            <Name>Algent Albrahimi</Name>
+            <Email>algent@protonmail.com</Email>
+        </Packager>
+        <License>BSD-3-Clause</License>
+        <PartOf>programming.library</PartOf>
+        <Summary xml:lang="en">A library providing Unicode character names and annotations</Summary>
+        <Description xml:lang="en">A library providing Unicode character names and annotations
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://getsol.us/sources/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>libuninameslist</Name>
+        <Summary xml:lang="en">A library providing Unicode character names and annotations</Summary>
+        <Description xml:lang="en">A library providing Unicode character names and annotations
+</Description>
+        <PartOf>programming.library</PartOf>
+        <Files>
+            <Path fileType="library">/usr/lib64/libuninameslist.so.1</Path>
+            <Path fileType="library">/usr/lib64/libuninameslist.so.1.0.5</Path>
+            <Path fileType="man">/usr/share/man/man3/libuninameslist.3</Path>
+        </Files>
+    </Package>
+    <Package>
+        <Name>libuninameslist-devel</Name>
+        <Summary xml:lang="en">Development files for libuninameslist</Summary>
+        <Description xml:lang="en">A library providing Unicode character names and annotations
+</Description>
+        <PartOf>programming.devel</PartOf>
+        <RuntimeDependencies>
+            <Dependency release="1">libuninameslist</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="header">/usr/include/uninameslist.h</Path>
+            <Path fileType="library">/usr/lib64/libuninameslist.a</Path>
+            <Path fileType="library">/usr/lib64/libuninameslist.so</Path>
+            <Path fileType="data">/usr/lib64/pkgconfig/libuninameslist.pc</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2019-12-29</Date>
+            <Version>20190701</Version>
+            <Comment>Packaging update</Comment>
+            <Name>Algent Albrahimi</Name>
+            <Email>algent@protonmail.com</Email>
+        </Update>
+    </History>
+</PISI>
