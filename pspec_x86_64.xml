@@ -1,6 +1,7 @@
 <PISI>
     <Source>
         <Name>libuninameslist</Name>
+        <Homepage>https://github.com/fontforge/libuninameslist</Homepage>
         <Packager>
             <Name>Algent Albrahimi</Name>
             <Email>algent@protonmail.com</Email>
@@ -20,7 +21,7 @@
         <PartOf>programming.library</PartOf>
         <Files>
             <Path fileType="library">/usr/lib64/libuninameslist.so.1</Path>
-            <Path fileType="library">/usr/lib64/libuninameslist.so.1.0.5</Path>
+            <Path fileType="library">/usr/lib64/libuninameslist.so.1.0.6</Path>
             <Path fileType="man">/usr/share/man/man3/libuninameslist.3</Path>
         </Files>
     </Package>
@@ -31,19 +32,18 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="1">libuninameslist</Dependency>
+            <Dependency release="2">libuninameslist</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/uninameslist.h</Path>
-            <Path fileType="library">/usr/lib64/libuninameslist.a</Path>
             <Path fileType="library">/usr/lib64/libuninameslist.so</Path>
             <Path fileType="data">/usr/lib64/pkgconfig/libuninameslist.pc</Path>
         </Files>
     </Package>
     <History>
-        <Update release="1">
-            <Date>2019-12-29</Date>
-            <Version>20190701</Version>
+        <Update release="2">
+            <Date>2020-04-05</Date>
+            <Version>20200313</Version>
             <Comment>Packaging update</Comment>
             <Name>Algent Albrahimi</Name>
             <Email>algent@protonmail.com</Email>
